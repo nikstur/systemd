@@ -4,7 +4,9 @@
 #if HAVE_BZIP2
 #include <bzlib.h>
 #endif
+#if HAVE_XZ
 #include <lzma.h>
+#endif
 #include <sys/types.h>
 #include <zlib.h>
 
