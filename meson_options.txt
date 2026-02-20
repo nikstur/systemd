@@ -223,6 +223,10 @@ option('pamlibdir', type : 'string',
        description : 'directory for PAM modules')
 option('pamconfdir', type : 'string',
        description : 'directory for PAM configuration ["no" disables]')
+option('systemsleepdir', type : 'string',
+       description : 'directory for system-sleep executables')
+option('systemshutdowndir', type : 'string',
+       description : 'directory for system-shutdown executables')
 option('sshconfdir', type : 'string',
        description : 'directory for SSH client configuration ["no" disables]')
 option('sshdconfdir', type : 'string',

@@ -157,8 +157,6 @@ systemgeneratordir = libexecdir / 'system-generators'
 usergeneratordir = libexecdir / 'user-generators'
 systemenvgeneratordir = libexecdir / 'system-environment-generators'
 userenvgeneratordir = libexecdir / 'user-environment-generators'
-systemshutdowndir = libexecdir / 'system-shutdown'
-systemsleepdir = libexecdir / 'system-sleep'
 systemunitdir = libexecdir / 'system'
 systempresetdir = libexecdir / 'system-preset'
 initrdpresetdir = libexecdir / 'initrd-preset'
@@ -204,6 +202,16 @@ endif
 pamconfdir = get_option('pamconfdir')
 if pamconfdir == ''
         pamconfdir = prefixdir / 'lib/pam.d'
+endif
+
+systemshutdowndir = get_option('systemshutdowndir')
+if systemshutdowndir == ''
+        systemshutdowndir = libexecdir / 'system-shutdown'
+endif
+
+systemsleepdir = get_option('systemsleepdir')
+if systemsleepdir == ''
+        systemsleepdir = libexecdir / 'system-sleep'
 endif
 
 sshconfdir = get_option('sshconfdir')
